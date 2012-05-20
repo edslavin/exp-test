@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>experi.me test</title>
+
+<style>
+/*body {*/
+
+    /*-moz-transition: background-color ease 2s;*/
+/*}*/
+
+body {
+
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666666;
+    /*text-align: center;*/
+
+}
+
+b {
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 50px;
+    margin: -5px auto;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 25px;
+    margin: 10px auto;
+    /*text-align: center;*/
+}
+
+.container
+{
+    width: 100%;
+	margin: 0 auto;
+    /*text-align: center;*/
+}
+
+.hangright {
+    float: right;
+    width: 95%;
+    background: #ededed;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    margin-right: -8px;
+    border: 2px dashed red;
+}
+
+.hangleft {
+    float: left;
+    width: 95%;
+    background: #ededed;
+    padding-left: 8px;
+    margin-bottom: 20px;
+    margin-left: -8px;
+    border: 1px dashed #666666;
+    border-left: none;
+
+}
+
+#fb-connect-button {
+
+    float:none;
+    width: 129px;
+    height: 39px;
+    margin: 0 auto;
+}
+
+#mood-selector-colors {
+
+    width: 100%;
+    height: 80px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    padding-left: 4px;
+}
+
+.mood-color {
+    display: block;
+    float: left;
+    margin-right: 2px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+	line-height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+}
+
+#depressed-mood {
+	background: #000099;
+}
+
+#bad-mood { 
+    background: purple;
+}
+
+#ok-mood {
+    background: #FF9900;
+}
+
+#good-mood {
+    background: green;
+}
+
+#great-mood {
+    background: red;
+}
+
+.black-text {
+	color: black;
+}
+
+.button {
+	border: none;
+	text-align: center;
+	height: 45px;
+	width: 80px;
+	color: #fff;
+	font-size: 18px;
+	background: #3366FF;
+	margin-top: 10px;
+
+}
+
+/*@media (max-width: 640px) {*/
+    /*body { background: #b0d3ff; }*/
+/*}*/
+
+/*@media only screen and (max-width: 480px) {*/
+	 /*Mobile styles go here */
+	/*body {*/
+        /*width:100%;*/
+        /*background: #ededed;*/
+
+    /*}*/
+	/*img{max-width:100%;}*/
+    /*#container{*/
+        /*width: 100%;*/
+        /*background: #fff;*/
+        /*margin: auto 0;*/
+    /*}*/
+/*}*/
+
+</style>
+</head>
+
+
+
+<body>
+
+	<h1>experi.<span class="black-text">me</span></h1>
+	<h2>How do you feel?</h2>
+
+	<div id="mood-selector-colors">
+  		<div class="mood-color" id="depressed-mood">depressed</div>
+  		<div class="mood-color" id="bad-mood">bad</div>
+  		<div class="mood-color" id="ok-mood">okay</div>
+  		<div class="mood-color" id="good-mood">good</div>
+  		<div class="mood-color" id="great-mood">great</div>
+	</div>
+
+	<h2>What's on your mind?</h2>
+	<form>
+		<textarea class="textarea" cols="30" rows="4" name="checkin-note"></textarea><br />
+		<input type="submit" value="[+] Add" class="button" />
+	</form>
+
+</body>
+
+</html>
